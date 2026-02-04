@@ -1,35 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>せつかれーのサイト</title>
+  <title>せつかれのホームページ</title>
+
+  <style>
+    body {
+      background-color: #d6f3ff;
+      text-align: center;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #0066cc;
+      margin-top: 40px;
+    }
+
+    p {
+      color: #333;
+    }
+
+    /* 画像ボタン */
+    .img-button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+
+    .img-button img {
+      width: 200px;
+      transition: transform 0.2s;
+    }
+
+    .img-button img:hover {
+      transform: scale(1.1);
+    }
+
+    /* セクション */
+    .section {
+      margin-top: 60px;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 20px;
+      background-color: #bde9ff;
+    }
+  </style>
 </head>
-<style>
-  body {
-    background-color: #cceeff;
-    font-family: sans-serif;
-    text-align: center;
-  }
-h1 {
-  color: #0066cc;
-  font-size: 48px;
-}
-
-p {
-  color: #333;
-  font-size: 18px;
-}
-
-button { padding: 10px 20px; font-size: 16px; }
-
-
-</style>
 
 <body>
+
   <h1>ようこそ、ここはせつかれのホームページです。</h1>
-  <p>詳しくは↓</p>
+  <p>ここではゲームなどの情報を載せていきます！</p>
+
+  <!-- 画像ボタン -->
+  <button class="img-button" onclick="location.href='page2.html'">
+    <img src="21aoUPG3svL.png" alt="画像ボタン">
+  </button>
+
+  <!-- ゲーム紹介 -->
+  <div class="section">
+    <h2>🎮 好きなゲーム</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>Roblox</li>
+      <li>Minecraft</li>
+      <li>Undertale</li>
+    </ul>
+  </div>
+
+  <!-- 外部リンク -->
+  <div class="section">
+    <h2>🔗 リンク</h2>
+    <button onclick="window.open('https://www.youtube.com', '_blank')">
+      YouTubeへ
+    </button>
+  </div>
+
+  <footer>
+    <p>© 2026 せつかれ</p>
+  </footer>
+
 </body>
-<button>クリック！</button>
-
-
 </html>
