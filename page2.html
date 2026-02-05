@@ -3,36 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <title>roblox</title>
+
   <style>
-  .img-button img {
-    width: 200px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
+    body {
+      text-align: center;
+      background: #eef;
+      font-family: sans-serif;
+    }
 
-  .img-button img:hover {
-    transform: scale(1.2);
-  }
-</style>
+    /* 画像ボタンの設定 */
+    .img-button img {
+      width: 200px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
 
+    /* ホバーで拡大 */
+    .img-button img:hover {
+      transform: scale(1.2);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    a {
+      text-decoration: none;
+      color: #6a2be2;
+      font-size: 16px;
+    }
+  </style>
 </head>
 
-<body style="text-align:center; background:#eef;">
+<body>
 
   <h1>ここは主に僕がやってるロブロックスのゲームの情報だよ！</h1>
   <p>これからどんどん情報を上げてくね！</p>
 
-  <!-- ページ1へ戻る（今まで通り） -->
+  <!-- ページ1に戻る -->
   <p>
     <a href="index.html">← 戻る</a>
   </p>
 
-  <!-- ページ3へ行く画像ボタン -->
+  <!-- ページ3に行く画像ボタン -->
   <p>
-    <a href="page3.html">
-      <img src="BaLnbHfCn1f2cRVHPBi6pXGyj3reL5NX7T9KRHRvmj_WzZulNViXRYCTZ-yPJwtVhokhmikt8dgAdnFcAqYAbA.webp"
-           alt="ページ3へ"
-           width="200">
+    <a href="page3.html" class="img-button">
+      <img src="BalnbHfCnf2cRVHPBi6pXGyj3reL5NX7T9KRHRvmj_WzZuINViXRYCTZ-yPJwtVhokhmikt8dgAdnFcaqYAbA.webp"
+           alt="ページ3へ">
     </a>
   </p>
 
