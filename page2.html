@@ -24,14 +24,13 @@
       font-size: 16px;
     }
 
-    /* 画像ボタン共通 */
+    /* 画像ボタン（ホバーで拡大） */
     .img-button img {
-      width: 260px; /* ロゴだから少し大きめ */
+      width: 260px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
     }
 
-    /* ホバーで拡大 */
     .img-button img:hover {
       transform: scale(1.2);
       box-shadow: 0 12px 30px rgba(0,0,0,0.35);
@@ -44,14 +43,15 @@
   <h1>ここは主に僕がやってるロブロックスのゲームの情報だよ！</h1>
   <p>これからどんどん情報を上げてくね！</p>
 
-  <!-- 戻る -->
+  <!-- ページ1へ戻る -->
   <a href="index.html" class="back">← 戻る</a>
 
-  <!-- Blox Fruits 画像（拡大する） -->
-  <p>
-    <a href="page3.html" class="img-button">
-      <img src="BalnbHfCnf2cRVHPBi6pXGyj3reL5NX7T9KRHRvmj_WzZuINViXRYCTZ-yPJwtVhokhmikt8dgAdnFcaqYAbA.webp"
-           alt="Blox Fruits">
+  <!-- 画像だけのボタン（文字なし・ページ3へ） -->
+  <p class="img-button">
+    <a href="page3.html">
+      <img
+        src="BaLnbHfCn1f2cRVHPBi6pXGyj3reL5NX7T9KRHRvmj_WzZulNViXRYCTZ-yPJwtVhokhmikt8dgAdnFcAqYAbA.webp"
+        alt="Blox Fruits">
     </a>
   </p>
 
