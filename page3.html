@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ページ3</title>
+
+  <style>
+    body {
+      background-color: #d6f3ff;
+      text-align: center;
+      font-family: sans-serif;
+    }
+
+    .img-button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      margin-top: 40px;
+    }
+
+    .img-button img {
+      width: 200px;
+      transition: transform 0.2s;
+    }
+
+    .img-button img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>ページ3だよ！</h1>
+  <p>ここは3つ目のページです。</p>
+
+  <!-- ページ1へ -->
+  <button class="img-button" onclick="location.href='index.html'">
+    <img src="home.webp" alt="ページ1へ">
+  </button>
+
+  <br><br>
+
+  <!-- ページ2へ -->
+  <button class="img-button" onclick="location.href='page2.html'">
+    <img src="home.webp" alt="ページ2へ">
+  </button>
+
+</body>
+</html>
