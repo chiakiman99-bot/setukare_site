@@ -11,9 +11,22 @@
       font-family: sans-serif;
     }
 
-    /* 画像ボタンの設定 */
+    h1 {
+      margin-top: 30px;
+    }
+
+    /* 戻るリンク */
+    .back {
+      display: inline-block;
+      margin: 15px 0;
+      color: #6a2be2;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* 画像ボタン共通 */
     .img-button img {
-      width: 200px;
+      width: 260px; /* ロゴだから少し大きめ */
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
     }
@@ -21,13 +34,7 @@
     /* ホバーで拡大 */
     .img-button img:hover {
       transform: scale(1.2);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    }
-
-    a {
-      text-decoration: none;
-      color: #6a2be2;
-      font-size: 16px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
     }
   </style>
 </head>
@@ -37,16 +44,14 @@
   <h1>ここは主に僕がやってるロブロックスのゲームの情報だよ！</h1>
   <p>これからどんどん情報を上げてくね！</p>
 
-  <!-- ページ1に戻る -->
-  <p>
-    <a href="index.html">← 戻る</a>
-  </p>
+  <!-- 戻る -->
+  <a href="index.html" class="back">← 戻る</a>
 
-  <!-- ページ3に行く画像ボタン -->
+  <!-- Blox Fruits 画像（拡大する） -->
   <p>
     <a href="page3.html" class="img-button">
       <img src="BalnbHfCnf2cRVHPBi6pXGyj3reL5NX7T9KRHRvmj_WzZuINViXRYCTZ-yPJwtVhokhmikt8dgAdnFcaqYAbA.webp"
-           alt="ページ3へ">
+           alt="Blox Fruits">
     </a>
   </p>
 
